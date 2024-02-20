@@ -16,6 +16,7 @@ const Login =    require('./models/User')
 require("dotenv").config() // haven't used dotenv.config()
 const bcrypt = require('bcrypt');
 const path = require('path');
+const port = process.env.PORT || 3000
 
 app.use(express.json());
 // app.use("/images", express.static(path.join(__dirname, "/images")));
